@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Todo app</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="header__container header__img">
+        <div class="header">
+          <h1>Todo</h1>
+          <button class="header__toggle">
+            <img src="./images/icon-sun.svg" alt="" />
+          </button>
+        </div>
+        <form action="" id="form" class="form">
+          <div class="form__input">
+            <button type="submit" id="button" class="button"></button>
+            <img src="" alt="" />
+            <input
+              type="text"
+              id="input"
+              class="input"
+              placeholder="Create a new todo..."
+            />
+          </div>
+          <p id="errorMessage"></p>
+        </form>
+      </header>
+      <ul id="list"></ul>
+      <div class="counter__container">
+        <p><span id="number">0</span> items left</p>
+        <p>Clear Completed</p>
+      </div>
+      <footer class="footer">
+        <p>Drag and drop to reorder list</p>
+      </footer>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
+<!-- <div class="attribution">
+  Challenge by
+  <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+    >Frontend Mentor</a
+  >. Coded by <a href="#">@calmohtml</a>.
+</div> -->
+<!-- Add dynamic number -->
+<!-- <div>
+      <span>0 items left</span>
+      <span>All</span>
+      <span>Active</span>
+      <span>Completed</span>
+      <span>Clear Completed</span>
+    </div> -->

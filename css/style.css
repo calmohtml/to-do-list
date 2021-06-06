@@ -1,0 +1,154 @@
+@import "./variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Josefin Sans";
+  font-size: 1.8rem;
+  font-weight: 400;
+  background-color: var(--veryDarkBlue);
+  color: var(--darkGrayishBlue);
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--veryLightGray);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 2vw;
+}
+
+.header__img {
+  background-image: url("../images/bg-desktop-dark.jpg");
+  background-repeat: no-repeat;
+  height: 30vh;
+  padding: 1rem;
+  background-position: center;
+}
+
+.header__toggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 6vh 0px;
+}
+
+.form__input {
+  background: var(--veryDarkDesaturatedBlue);
+  display: flex;
+  margin: 1vh 0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.button {
+  background: transparent;
+  border-radius: 50px;
+  padding: 11px 12px;
+  margin-right: 10px;
+  border: 1px solid var(--veryDarkGrayishBlue);
+}
+
+.button img {
+  width: 25px;
+}
+
+.input {
+  background: var(--veryDarkDesaturatedBlue);
+  color: var(--veryDarkGrayishBlue);
+  border: none;
+  outline: none;
+}
+
+.errorMessage {
+  margin: 1vh 0;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+ul li {
+  /* background: var(--veryDarkDesaturatedBlue); */
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  margin: 1vh 0;
+  justify-content: center;
+}
+
+ul li .todo {
+  background: var(--veryDarkDesaturatedBlue);
+  display: flex;
+  padding: 0.9rem 0.5rem;
+}
+
+.todo .setActive {
+  border-radius: 50px;
+  padding: 11px 12px;
+  margin-right: 10px;
+  border: 1px solid var(--veryDarkGrayishBlue);
+  background-color: var(--checkBackground);
+}
+
+.toDoCompleted {
+  background-image: url("../images/icon-check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.removeToDo {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0 0 0 -4px;
+}
+
+.counter__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.footer {
+  text-align: center;
+  margin: 3vh 0px;
+  color: var(--veryDarkGrayishBlueHover);
+}
+
+@media (min-width: 1440px) and (max-width: 3840px) {
+  .container {
+    width: 75%;
+  }
+}
